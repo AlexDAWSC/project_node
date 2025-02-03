@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Santiago de Compostela</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container-fluid vh-100">
+    <div class="row h-100">
+      <div class="col-9 p-0">
+        <div id="map" class="h-100"></div>
+      </div>
+
+      <div class="col-3 p-3 bg-light">
+        <h2 class="mb-4">Puntos gardados</h2>
+        <ul id="points-list" class="list-group"></ul>
+        
+        <div id="create" class="form-container oculto">
+          <form>
+            <div class="form-group">
+              <label for="nameInput">Nombre</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Introduce un nombre">
+            </div>
+            <button type="submit" class="btn btn-primary mr-2">Aceptar</button>
+            <button type="reset" class="btn btn-secondary">Cancelar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
